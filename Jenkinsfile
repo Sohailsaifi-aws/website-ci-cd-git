@@ -20,7 +20,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying website'
-                sh 'sudo cp -r * /var/www/html/'
+                sh 'sudo cp -r startbootstrap-agency-master/* /var/www/html/'
             }
         }
     }
